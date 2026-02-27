@@ -94,14 +94,14 @@ export default function GlossarySearch() {
   }, [searchQuery]);
 
   const categoryColors: Record<string, string> = {
-    Core: '#4F46E5',
+    Core: '#38BDF8',
     Application: '#E8A844',
-    DeFi: '#6366F1',
+    DeFi: '#7DD3FC',
     Cryptography: '#22C55E',
-    Governance: '#818CF8',
-    Token: '#A5B4FC',
-    Infrastructure: '#4F46E5',
-    Scaling: '#6366F1',
+    Governance: '#BAE6FD',
+    Token: '#E0F2FE',
+    Infrastructure: '#38BDF8',
+    Scaling: '#7DD3FC',
   };
 
   return (

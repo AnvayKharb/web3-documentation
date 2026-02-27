@@ -21,7 +21,7 @@ const config: Config = {
         'text-secondary': '#7E7E96',
         'text-muted': '#52526A',
         // Accents
-        'accent-primary': '#4F46E5',
+        'accent-primary': '#38BDF8',
         'accent-warm': '#E8A844',
         'accent-confirm': '#22C55E',
         // Legacy aliases for gradual migration
@@ -29,9 +29,9 @@ const config: Config = {
           black: '#09090E',
           darker: '#101016',
           dark: '#18181F',
-          cyan: '#4F46E5',
+          cyan: '#38BDF8',
           orange: '#E8A844',
-          purple: '#4F46E5',
+          purple: '#38BDF8',
           green: '#22C55E',
           pink: '#E8A844',
         }
@@ -54,11 +54,11 @@ const config: Config = {
       keyframes: {
         'pulse-glow': {
           '0%, 100%': { 
-            boxShadow: '0 0 20px rgba(79, 70, 229, 0.15)',
+            boxShadow: '0 0 20px rgba(56, 189, 248, 0.15)',
             transform: 'scale(1)'
           },
           '50%': { 
-            boxShadow: '0 0 30px rgba(79, 70, 229, 0.25)',
+            boxShadow: '0 0 30px rgba(56, 189, 248, 0.25)',
             transform: 'scale(1.01)'
           },
         },
@@ -92,7 +92,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(ellipse 80% 40% at 50% -10%, rgba(79, 70, 229, 0.12), transparent)',
+        'hero-glow': 'radial-gradient(ellipse 80% 40% at 50% -10%, rgba(56, 189, 248, 0.12), transparent)',
       },
     },
   },

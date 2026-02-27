@@ -34,7 +34,7 @@ export default function BackgroundMempool() {
   const springX = useSpring(mouseX, { stiffness: 50, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 50, damping: 20 });
 
-  const colors = ['#4F46E5', '#6366F1', '#818CF8', '#A5B4FC'];
+  const colors = ['#38BDF8', '#7DD3FC', '#BAE6FD', '#E0F2FE'];
 
   const generateTransaction = useCallback((): Transaction => {
     return {
@@ -190,7 +190,7 @@ export default function BackgroundMempool() {
             y1={`${lightning.y1}%`}
             x2={`${lightning.x2}%`}
             y2={`${lightning.y2}%`}
-            stroke="#4F46E5"
+            stroke="#38BDF8"
             strokeWidth="1"
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 0.6, 0] }}

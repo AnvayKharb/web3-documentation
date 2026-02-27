@@ -21,7 +21,7 @@ function PixelFragment({
   isEnter: boolean;
 }) {
   const size = Math.random() * 20 + 5;
-  const colors = ['#4F46E5', '#6366F1', '#818CF8', '#A5B4FC'];
+  const colors = ['#38BDF8', '#7DD3FC', '#BAE6FD', '#E0F2FE'];
   const color = colors[Math.floor(Math.random() * colors.length)];
   
   return (

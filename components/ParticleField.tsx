@@ -11,7 +11,7 @@ interface ParticleFieldProps {
   size?: number;
 }
 
-function Particles({ count = 3000, color = '#4F46E5', size = 0.015 }: ParticleFieldProps) {
+function Particles({ count = 3000, color = '#38BDF8', size = 0.015 }: ParticleFieldProps) {
   const pointsRef = useRef<THREE.Points>(null);
   const { mouse, viewport } = useThree();
   
@@ -143,7 +143,7 @@ function NetworkLines() {
   return (
     <lineSegments ref={linesRef} geometry={geometry}>
       <lineBasicMaterial 
-        color="#4F46E5" 
+        color="#38BDF8" 
         transparent 
         opacity={0.1}
         blending={THREE.AdditiveBlending}
@@ -184,7 +184,7 @@ function BlockchainNodes() {
         <mesh key={i} position={node.position}>
           <octahedronGeometry args={[node.scale, 0]} />
           <meshBasicMaterial
-            color={i % 2 === 0 ? '#4F46E5' : '#6366F1'}
+            color={i % 2 === 0 ? '#38BDF8' : '#7DD3FC'}
             wireframe
             transparent
             opacity={0.6}

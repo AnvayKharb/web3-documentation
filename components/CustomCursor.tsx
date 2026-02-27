@@ -84,7 +84,7 @@ export default function CustomCursor() {
           height: 40,
           borderRadius: '0%',
           backgroundColor: 'transparent',
-          border: '2px solid #4F46E5',
+          border: '2px solid #38BDF8',
           transform: 'rotate(45deg)',
         };
       case 'text':
@@ -92,7 +92,7 @@ export default function CustomCursor() {
           width: 4,
           height: 30,
           borderRadius: '2px',
-          backgroundColor: '#4F46E5',
+          backgroundColor: '#38BDF8',
           border: 'none',
         };
       default:
@@ -101,7 +101,7 @@ export default function CustomCursor() {
           height: 20,
           borderRadius: '50%',
           backgroundColor: 'transparent',
-          border: '2px solid #4F46E5',
+          border: '2px solid #38BDF8',
         };
     }
   };
@@ -146,7 +146,7 @@ export default function CustomCursor() {
           opacity: isVisible ? 1 : 0,
           width: 6,
           height: 6,
-          backgroundColor: '#4F46E5',
+          backgroundColor: '#38BDF8',
           borderRadius: '50%',
         }}
       />

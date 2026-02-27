@@ -52,13 +52,13 @@ const links: GraphLink[] = [
 ];
 
 const categoryColors: Record<string, string> = {
-  core: '#4F46E5',
+  core: '#38BDF8',
   application: '#E8A844',
-  scaling: '#6366F1',
+  scaling: '#7DD3FC',
   cryptography: '#22C55E',
-  economics: '#818CF8',
-  governance: '#A5B4FC',
-  infrastructure: '#4F46E5',
+  economics: '#BAE6FD',
+  governance: '#E0F2FE',
+  infrastructure: '#38BDF8',
 };
 
 export default function KnowledgeGraph() {
@@ -138,7 +138,7 @@ export default function KnowledgeGraph() {
       .selectAll('line')
       .data(links)
       .join('line')
-      .attr('stroke', '#4F46E5')
+      .attr('stroke', '#38BDF8')
       .attr('stroke-opacity', 0.2)
       .attr('stroke-width', 1);
 

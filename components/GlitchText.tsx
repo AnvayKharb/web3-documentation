@@ -87,7 +87,7 @@ export default function GlitchText({
     return {
       textShadow: `
         ${offset}px 0 #E8A844,
-        ${-offset}px 0 #4F46E5
+        ${-offset}px 0 #38BDF8
       `,
       transform: `translate(${Math.random() * 2 - 1}px, ${Math.random() * 2 - 1}px)`,
     };

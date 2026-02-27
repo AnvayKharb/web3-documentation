@@ -66,7 +66,7 @@ export default function BlockCard({
         animate={isInView ? { scaleY: 1 } : {}}
         transition={{ duration: 0.4, delay: delay + 0.2 }}
         style={{ 
-          background: 'linear-gradient(to bottom, transparent, #4F46E5)',
+          background: 'linear-gradient(to bottom, transparent, #38BDF8)',
           transformOrigin: 'top'
         }}
       />
@@ -116,7 +116,7 @@ export default function BlockCard({
         </div>
 
         {/* Content */}
-        <div className="p-6">
+        <div className="p-8">
           {children || content}
         </div>
 
@@ -124,7 +124,7 @@ export default function BlockCard({
         <motion.div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
           style={{
-            background: 'linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, transparent 50%, rgba(79, 70, 229, 0.03) 100%)',
+            background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, transparent 50%, rgba(56, 189, 248, 0.05) 100%)',
           }}
         />
 
@@ -145,7 +145,7 @@ export default function BlockCard({
       >
         <motion.path
           d="M16 0 L16 8 M12 4 L16 8 L20 4"
-          stroke="#4F46E5"
+          stroke="#38BDF8"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"
@@ -173,9 +173,9 @@ export function ChainConnector({ className = '' }: { className?: string }) {
     >
       <defs>
         <linearGradient id="chainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#4F46E5" stopOpacity="0.3" />
-          <stop offset="50%" stopColor="#4F46E5" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#4F46E5" stopOpacity="0.3" />
+          <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.3" />
+          <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.3" />
         </linearGradient>
       </defs>
       
@@ -197,7 +197,7 @@ export function ChainConnector({ className = '' }: { className?: string }) {
           cx="100"
           cy={y}
           r="3"
-          fill="#4F46E5"
+          fill="#38BDF8"
           initial={{ scale: 0, opacity: 0 }}
           animate={isInView ? { scale: 1, opacity: 1 } : {}}
           transition={{ delay: 0.2 * i + 0.3 }}

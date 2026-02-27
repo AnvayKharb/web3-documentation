@@ -43,15 +43,15 @@ export default function Home() {
       </motion.div>
 
       {/* Documentation Sections Preview */}
-      <section className="relative py-32 px-8" data-section="docs-preview">
+      <section className="relative py-16 px-4 md:px-6" data-section="docs-preview">
         <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-7xl mx-auto"
+          className="max-w-[1600px] mx-auto"
         >
-          <motion.div variants={fadeInUp} className="text-center mb-20">
+          <motion.div variants={fadeInUp} className="text-center mb-16">
             <GlitchText 
               text="PROTOCOL DOCUMENTATION" 
               className="text-4xl md:text-6xl font-sans font-bold mb-6"
@@ -62,7 +62,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {docSections.slice(0, 6).map((section, index) => (
               <motion.div
                 key={section.slug}
@@ -70,21 +70,21 @@ export default function Home() {
                 custom={index}
               >
                 <Link href={`/docs/${section.slug}`}>
-                  <BlockCard blockNumber={index + 1} className="h-full group">
-                    <div className="flex items-start gap-4">
-                      <span className="text-4xl">{section.icon}</span>
+                  <BlockCard blockNumber={index + 1} className="h-full min-h-[200px] group">
+                    <div className="flex items-start gap-6 p-2">
+                      <span className="text-5xl">{section.icon}</span>
                       <div className="flex-1">
-                        <h3 className="text-xl font-sans font-bold text-text-primary group-hover:text-accent-primary transition-colors">
+                        <h3 className="text-2xl font-sans font-bold text-text-primary group-hover:text-accent-primary transition-colors">
                           {section.title}
                         </h3>
-                        <p className="text-text-secondary text-sm mt-2 line-clamp-2">
+                        <p className="text-text-secondary text-base mt-3 line-clamp-3">
                           {section.description}
                         </p>
-                        <div className="flex flex-wrap gap-2 mt-4">
-                          {section.keyPoints.slice(0, 2).map((point, i) => (
+                        <div className="flex flex-wrap gap-2 mt-5">
+                          {section.keyPoints.slice(0, 3).map((point, i) => (
                             <span 
                               key={i}
-                              className="text-xs px-2 py-1 bg-accent-primary/10 text-accent-primary rounded font-mono"
+                              className="text-sm px-3 py-1.5 bg-accent-primary/10 text-accent-primary rounded font-mono"
                             >
                               {point}
                             </span>
@@ -123,14 +123,14 @@ export default function Home() {
       </section>
 
       {/* Consensus Visualization */}
-      <section className="relative py-32 px-8 bg-gradient-to-b from-transparent via-accent-primary/5 to-transparent" data-section="consensus">
+      <section className="relative py-16 px-4 md:px-6 bg-gradient-to-b from-transparent via-accent-primary/5 to-transparent" data-section="consensus">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-7xl mx-auto"
+          className="max-w-[1600px] mx-auto"
         >
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <GlitchText 
               text="CONSENSUS MECHANISMS" 
               className="text-4xl md:text-5xl font-sans font-bold mb-6"
@@ -145,14 +145,14 @@ export default function Home() {
       </section>
 
       {/* Knowledge Graph */}
-      <section className="relative py-32 px-8" data-section="knowledge-graph">
+      <section className="relative py-16 px-4 md:px-6" data-section="knowledge-graph">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-7xl mx-auto"
+          className="max-w-[1600px] mx-auto"
         >
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <GlitchText 
               text="KNOWLEDGE GRAPH" 
               className="text-4xl md:text-5xl font-sans font-bold mb-6"
@@ -167,14 +167,14 @@ export default function Home() {
       </section>
 
       {/* Glossary */}
-      <section className="relative py-32 px-8 bg-gradient-to-b from-transparent via-accent-warm/5 to-transparent" data-section="glossary">
+      <section className="relative py-16 px-4 md:px-6 bg-gradient-to-b from-transparent via-accent-warm/5 to-transparent" data-section="glossary">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-7xl mx-auto"
+          className="max-w-[1600px] mx-auto"
         >
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <GlitchText 
               text="PROTOCOL GLOSSARY" 
               className="text-4xl md:text-5xl font-sans font-bold mb-6"

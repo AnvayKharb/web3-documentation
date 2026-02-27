@@ -24,12 +24,12 @@
   --text-muted: #52526A;
 
   /* Accents */
-  --accent-primary: #4F46E5;
+  --accent-primary: #38BDF8;
   --accent-warm: #E8A844;
   --accent-confirm: #22C55E;
 
   /* Glow effects */
-  --glow-indigo: rgba(79, 70, 229, 0.12);
+  --glow-sky: rgba(56, 189, 248, 0.12);
   --glow-amber: rgba(232, 168, 68, 0.10);
 }
 
@@ -84,7 +84,7 @@ body::before {
 
 /* Selection */
 ::selection {
-  background: rgba(79, 70, 229, 0.3);
+  background: rgba(56, 189, 248, 0.3);
   color: var(--text-primary);
 }
 
@@ -189,9 +189,9 @@ body::before {
 /* Typography utilities */
 .hero-h1 {
   font-weight: 800;
-  font-size: clamp(72px, 8vw, 120px);
-  letter-spacing: -0.035em;
-  line-height: 0.95;
+  font-size: clamp(96px, 14vw, 200px);
+  letter-spacing: -0.04em;
+  line-height: 0.9;
 }
 
 .heading-1 {

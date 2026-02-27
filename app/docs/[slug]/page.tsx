@@ -134,7 +134,7 @@ export default function DocPage() {
 
             {/* Main Content */}
             <motion.section variants={fadeInUp} className="mb-12">
-              <div className="prose prose-invert prose-indigo max-w-none">
+              <div className="prose prose-invert prose-sky max-w-none">
                 {doc.content.split('\n\n').map((paragraph, index) => (
                   <motion.p
                     key={index}
