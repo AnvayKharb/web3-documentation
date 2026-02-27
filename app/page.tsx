@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { docSections } from '@/lib/web3-content';
@@ -18,6 +18,18 @@ const BlockExplorer = dynamic(() => import('@/components/BlockExplorer'), { ssr:
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll();
+  const [blockTimestamp, setBlockTimestamp] = useState<string>('');
+  const [blockNum, setBlockNum] = useState<string>('');
+
+  useEffect(() => {
+    const updateTimestamp = () => {
+      setBlockTimestamp(new Date().toISOString());
+      setBlockNum(Math.floor(Date.now() / 1000).toString());
+    };
+    updateTimestamp();
+    const interval = setInterval(updateTimestamp, 1000);
+    return () => clearInterval(interval);
+  }, []);
   const opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
 
   return (
@@ -217,10 +229,10 @@ export default function Home() {
           <div className="mt-12 pt-8 border-t border-border-subtle text-center">
             <p className="text-text-muted font-mono text-xs">
               <span className="text-accent-primary">{'<'}</span>
-              BLOCK #{Math.floor(Date.now() / 1000)}
+              BLOCK #{blockNum || '...'}
               <span className="text-accent-primary">{'>'}</span>
               {' // '}
-              TIMESTAMP: {new Date().toISOString()}
+              TIMESTAMP: {blockTimestamp || '...'}
             </p>
           </div>
         </div>
