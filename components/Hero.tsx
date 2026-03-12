@@ -24,6 +24,9 @@ const ticker = [
   'MERKLE TREE',
   'CRYPTOGRAPHY',
   'TOKENOMICS',
+  'VALIDATOR',
+  'CROSS-CHAIN',
+  'EVM',
 ];
 
 export default function Hero() {
