@@ -25,6 +25,14 @@ npm run dev
 - **Styling:** Tailwind CSS
 - **Data Visualization:** D3.js
 
+## Project Structure
+
+```
+app/           # Next.js app router pages
+components/    # React components (3D, UI, visualizations)
+lib/           # Shared utilities and content
+```
+
 ## License
 
 MIT
