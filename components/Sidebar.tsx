@@ -16,6 +16,7 @@ const navItems = [
   { title: 'Tokenomics', slug: 'tokenomics', icon: '◆' },
   { title: 'DAOs', slug: 'daos', icon: '⬢' },
   { title: 'Wallet Infrastructure', slug: 'wallets', icon: '⬣' },
+  { title: 'Cross-Chain Bridges', slug: 'bridges', icon: '⇌' },
 ];
 
 export default function Sidebar() {
