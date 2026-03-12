@@ -294,6 +294,7 @@ export const springConfig = {
   snappy: { stiffness: 400, damping: 25 },
   bouncy: { stiffness: 600, damping: 15 },
   slow: { stiffness: 50, damping: 20 },
+  wobbly: { stiffness: 180, damping: 12 },
 };
 
 // Preset viewport options
